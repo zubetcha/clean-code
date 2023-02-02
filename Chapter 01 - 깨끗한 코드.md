@@ -1,4 +1,4 @@
-# 1. 깨끗한 코드
+# 1. Chapter 01 - 깨끗한 코드
 
 1. 나쁜 코드를 작성하지 않아야 하는 이유
 
@@ -7,7 +7,7 @@
 
 2. 코드를 최대한 깨끗하게 유지하는 습관
 
-### 깨끗한 코드의 기준 혹은 정의
+### 저명한 인사들의 깨끗한 코드의 기준 혹은 정의
 
 **비야네 스트롭스트룹**
 
@@ -17,7 +17,6 @@
 4. 한 가지를 제대로 (단일책임)
 5. 우아한 → 보기에 즐거운
 6. 효율적인 → 속도를 비롯하여 CPU 등의 자원을 낭비하지 않는 코드
-   1. JS에서는 메모리?
 
 → 세세한 사항까지 꼼꼼하게 처리하는 코드
 
@@ -52,3 +51,61 @@
 
 1. 읽으면서 짐작했던 기능들을 그대로 수행
 2. 언어가 단순하게 보이도록
+
+### 내가 생각하는 깨끗한 코드
+
+1. 작은 단위로 쪼갠 함수
+   - 로직에 이름이 생겨서 코드를 끝까지 다 읽지 않아도 어떤 동작을 할 지 유추할 수 있음
+
+```jsx
+if (code === 800) {
+  setNameValue("");
+  setNameStatus("error");
+  nameInputRef.current.focus();
+}
+
+if (code === 800) {
+  handleDuplicateNameError();
+}
+
+function handleDuplicateNameError() {
+  setNameValue("");
+  setNameStatus("error");
+  nameInputRef.current.focus();
+}
+```
+
+2. 내장 메서드 사용
+   - 얻으려고 하는 값의 데이터 타입과 목적을 빠르게 유추할 수 있음
+
+```jsx
+const filteredList = [];
+
+for (let i = 0; i < array.length; i++) {
+  if (array[i].length > 5) {
+    filteredList.push(array[i]);
+  }
+}
+
+const filteredList = array.filter((x) => x.length > 5);
+```
+
+3. 조건문의 깊이가 깊지 않은 코드
+
+- 어떤 조건에서 실행되는지 한 눈에 파악 가능
+
+```jsx
+if () {
+   if () {
+      if () {
+
+      }
+   }
+}
+
+if () {}
+
+if () {}
+
+if () {}
+```
