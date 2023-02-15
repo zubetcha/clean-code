@@ -10,3 +10,4 @@
 4. [Chapter 04 - 주석](https://github.com/zubetcha/clean-code/blob/main/Chapter%2004%20-%20주석.md)
 5. [Chapter 05 - 형식 맞추기](https://github.com/zubetcha/clean-code/blob/main/Chapter%2005%20-%20형식%20맞추기.md)
 6. [Chapter 06 - 객체와 자료 구조](https://github.com/zubetcha/clean-code/blob/main/Chapter%2006%20-%20객체와%20자료%20구조.md)
+7. [Chapter 06 - 오류 처리](https://github.com/zubetcha/clean-code/blob/main/Chapter%2007%20-%20오류%20처리.md)
