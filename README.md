@@ -12,3 +12,4 @@
 6. [Chapter 06 - 객체와 자료 구조](https://github.com/zubetcha/clean-code/blob/main/Chapter%2006%20-%20객체와%20자료%20구조.md)
 7. [Chapter 07 - 오류 처리](https://github.com/zubetcha/clean-code/blob/main/Chapter%2007%20-%20오류%20처리.md)
 8. [Chapter 08 - 경계](https://github.com/zubetcha/clean-code/blob/main/Chapter%2008%20-%20경계.md)
+9. [Chapter 09 - 단위 테스트](https://github.com/zubetcha/clean-code/blob/main/Chapter%2009%20-%20단위%20테스트.md)
